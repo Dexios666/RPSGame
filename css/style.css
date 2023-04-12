@@ -1,0 +1,120 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    background-color: #1f242d;
+}
+p{
+    color: rgb(219, 219, 219);
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+span{
+    color: #0ef;
+    font-size: 18px;
+}
+h1{
+    color: #0ef;
+    margin-top: 55px;
+    font-size: 50px;
+}
+img{
+    margin-top: -30px;
+    width: 30%;
+    height: auto;
+}
+.up-down-anim{
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .3s;
+}
+.box {
+    width: 80%;
+    height: 60%;
+    margin-top: 80px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0E1116;
+    text-align: center;
+    border-radius: 20px;
+}
+@keyframes updown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}   
+.players {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    color: white;
+}
+.player1,
+.player2{
+    flex-basis: 45%;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #0ef;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+} 
+button:hover {
+    background-color: #0E1116;
+    color: white;
+}
+.result {
+    margin-top: 30px;
+} 
+h2#resultText {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0ef;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #0ef;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+button:hover {
+    background-color: #0E1116;
+    color: white;
+}

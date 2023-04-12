@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+<center>
+<div>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <img class="up-down-anim" src="icon.png">
+</div>
+<div class="box">
+    <div>
+        <p><span>Rock, Paper, Scissors</span> is a game between two people to resolve <span>disputes</span>. It involves using hand signals that represent rock, paper, and scissors. Rock beats scissors, paper beats rock, and scissors beat paper. If both players show the same signal, it's a tie, and the game continues until there is a winner.
+        </p>
+    </div>
+        <div class="players">
+            <div class="player1">
+              <h2>Player 1</h2>
+              <div class="buttons">
+                <button class="rock" onclick="playerOne('Rock')">Rock</button>
+                <button class="paper" onclick="playerOne('Paper')">Paper</button>
+                <button class="scissors" onclick="playerOne('Scissors')">Scissors</button>
+              </div>
+              <h3>Player 1 choice: <span id="player1Choice">-</span></h3>
+            </div>
+            <div class="player2">
+              <h2>Player 2</h2>
+              <div class="buttons">
+                <button class="rock" onclick="playerTwo('Rock')">Rock</button>
+                <button class="paper" onclick="playerTwo('Paper')">Paper</button>
+                <button class="scissors" onclick="playerTwo('Scissors')">Scissors</button>
+              </div>
+              <h3>Player 2 choice: <span id="player2Choice">-</span></h3>
+            </div>
+          </div>
+    <div class="result">
+        <h2 id="resultText">-</h2>
+        <button onclick="resetGame()">Play Again</button>
+      </div>
+    </div>
+</div>
+</center>
+<!--js link to html-->
+<script src="js/script.js"></script>
+</body>
+</html>
